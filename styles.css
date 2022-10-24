@@ -1,0 +1,232 @@
+* {
+    box-sizing:border-box;
+}
+
+html, body {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (min-resolution: 101dpi) {
+    body {
+        transform: scale(0.75); 
+        transform-origin: 0 0;
+        height: 133.1%;
+        width: 134%;
+    }
+}
+
+@media screen and (max-width:19.375rem) {
+    .navbar-links {
+        display: none;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@font-face {
+    font-family: Font Awesome Regular;
+    src: url(/fonts/FontAwesome5Free-Regular-400.otf);
+}
+
+.col-container {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+}
+
+.col {
+    flex: 1;
+}
+
+.left {
+    background-image: url('/images/bg_sidebar.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 19.375rem;
+    min-width: 19.375rem;
+}
+
+.right {
+    background-image: url('/images/main_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 80.625rem;
+}
+
+.user_image {
+    margin: 5.875rem 0rem 0rem 3.1875rem;
+}
+
+.user_name {
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(90, 116, 137);
+    font-weight: 700;
+    text-align: center;
+    margin-top: 3.125rem;
+}
+
+.job_text {
+    font-size: 21px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(149, 168, 183);
+    text-align: center;
+    margin-top: -0.9375rem;
+    font-weight: 400;
+}
+
+.social {
+    color: rgb(149, 168, 183);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: -0.3125rem;
+}
+
+div.social>i {
+    margin-right: 0.3125rem;
+}
+
+.about_text {
+    font-size: 0.9375rem;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(149, 168, 183);
+    text-align: center;
+    line-height: 2.3;
+    margin: 2.1875rem 1.875rem 0rem 1.875rem;
+    font-weight: 400;
+}
+
+button[type="btn_cv"] {
+    margin-top: 3.125rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    background-color: rgb(38, 59, 86);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.875rem;
+    width: 14.3125rem;
+    height: 2.3125rem;
+    box-shadow: 0.3206rem 0.8809rem 1.25rem 0rem rgba(0, 0, 0, 0.15);
+    border: none;
+    margin-left: 2.5625rem;
+}
+
+.navbar{
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+    background-color:#eaedf4;
+    color:white;
+    height: 3.875rem;
+    min-width: max-content;  
+}
+
+.brand-title {
+    color: rgb(149, 168, 183);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-family: 'Font Awesome Regular', sans-serif;
+    margin-left: 2.8125rem;
+}
+
+.navbar-links {
+    flex: 1 0 auto;
+}
+
+.navbar-links ul{
+    display: flex;
+    justify-content: center;
+    flex: 1 0 auto;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: rgb(90, 116, 137);
+    padding: 1.125rem 0rem;
+    margin: 0rem 2.1875rem;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.navbar-links a:hover{
+    border-bottom: 0.4375rem solid rgb(12, 111, 228);
+    transition: 0.25s;
+}
+
+.navbar-links a.active {
+    color: rgb(12, 111, 228);
+    border-bottom: 0.4375rem solid rgb(12, 111, 228);
+}
+
+.meta_title {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(38, 59, 86);
+    color: white;
+    font-style: italic;
+    font-size: 1.125rem;
+    width: 14.3125rem;
+    height: 2.3125rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0.3206rem 0.8809rem 1.25rem 0rem rgba(0, 0, 0, 0.15);
+    margin-left: 19.6875rem;
+    margin-top: 23.25rem;
+}
+
+.hello_world {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.3125rem;
+    font-size: 3.875rem;
+    color: white;
+    display: flex;
+    font-weight: 700;
+    margin-left: 19.6875rem;
+    margin-top: 1.875rem;
+}
+
+.descr {
+    font-family: 'Open Sans', sans-serif;
+    /*letter-spacing: 5px;*/
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    font-weight: 400;
+    margin-left: 19.6875rem;
+    margin-top: 1.25rem;
+}
+
+.arrows {
+    font-family: 'Open Sans', sans-serif;
+    /*letter-spacing: 5px;*/
+    font-size: 2.1875rem;
+    color: white;
+    display: flex;
+    font-weight: 400;
+    margin-left: 19.6875rem;
+    margin-top: 1.875rem;
+    opacity: 0.7;
+}
